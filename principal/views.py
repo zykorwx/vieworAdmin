@@ -10,14 +10,13 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-def inicio(request):
-    return render_to_response('principal/inicio.html', context_instance=RequestContext(request))
+
 
 
 def ingresar(request):
     if request.method == 'POST':
-        formulario = AuthenticationForm(request.POST)
-        if formulario.is_valid:
+        formulario_login = AuthenticationForm(request.POST)
+        if formulario_login.is_valid:
             usuario = request.POST['username']
             clave = request.POST['password']
             acceso = authenticate(username=usuario, password=clave)
@@ -29,11 +28,20 @@ def ingresar(request):
         else:
             return render_to_response('Mensajes/noactivo.html', context_instance=RequestContext(request))
     else:
-        formulario = AuthenticationForm()
-    return render_to_response('formularios/Ingresar.html', {'formulario':formulario}, context_instance=RequestContext(request))
+        formulario_login = AuthenticationForm()
+    return render_to_response('formularios/Ingresar.html', {'formulario_login':formulario_login}, context_instance=RequestContext(request))
 
 
 @login_required(login_url='/inresar')
 def cerrar(request):
     logout(request)
     return HttpResponseRedirect('/')
+
+
+def mostrar_noticias(request):
+    noticias = Noticia.objects.filter(estado=True)
+    return render_to_response('base/base_noticias.html',{'noticias': noticias}, context_instance=RequestContext(request))
+
+def mostrar_noticia(request, id_noticia):
+    dato = get_object_or_404(Noticia, pk=id_noticia)
+    return render_to_response('base/base_noticia.html',{'dato': dato}, context_instance=RequestContext(request))

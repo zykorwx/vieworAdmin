@@ -1,0 +1,18 @@
+{% extends 'base/base_noticia.html' %}
+
+{% block comentarios %}
+
+<div class="base_comentarios">
+{% for datos in comentarios %}
+<div class="titulo_comentario">
+    <h1> {{ datos.comentario.titulo }} </h1>
+</div>
+<div class="content_comentario">
+<p>{{ datos.comentario.contenido }}</p>
+</div>
+<div class="info_comentario"> <p> <sub><em>La fecha de publicacion: {{ datos.comentario.fecha_publicacion }}. Creado por: {{ datos.comentario.usuario.username|upper }}.</em> </sub></p> </div>
+{% empty %}
+        <p> No existen comentarios que mostrar<p>
+{% endfor %}
+</div>
+{% endblock %}
