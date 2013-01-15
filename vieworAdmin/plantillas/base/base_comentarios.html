@@ -1,6 +1,14 @@
 {% extends 'base/base_noticia.html' %}
 
-{% block comentarios %}
+
+
+{% block comentarios_noticia %}
+<h2> Comentarios </h2>
+
+<div class="nuevo_comentario_noticia">
+{% block nuevo_comentario_noticia %}{% endblock %}
+</div>
+
 
 <div class="base_comentarios">
 {% for datos in comentarios %}

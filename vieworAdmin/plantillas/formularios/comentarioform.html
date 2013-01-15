@@ -1,0 +1,12 @@
+
+
+{% block nuevo_comentario_noticia %}
+    <form id='formulario' method='post' action=''{% csrf_token %}
+        {{ formulario.as_p }}
+        <p><input type='submit' value='Confirmar'/></p>
+    </form>
+
+{% endblock %}
+
+
+

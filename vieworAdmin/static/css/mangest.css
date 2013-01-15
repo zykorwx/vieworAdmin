@@ -1,3 +1,9 @@
+body{
+    background-color: #fff;
+}
+
+
+
 .content-1{
     margin:0 0 0 0;
     background-image:url(../img/fondo-head.jpg);
@@ -12,6 +18,10 @@
 
 .content{
     margin: 1% 10% 0 10%;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .Titulo{
@@ -28,8 +38,8 @@
 nav.navMenuTop{
 	/*Bordes redondeados*/
     border-radius: 10px;
-	background-color: rgb(220, 220, 220);
-	background-color: rgba(220, 220, 220, 0.9);
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.4);
 	overflow: hidden;
 	padding: 10px;
 }
@@ -50,7 +60,7 @@ nav.navMenuTop ul li{
     margin-right:10px;
     text-align:center;
     /*Sombras para texto, los mismos parametros que box-shadow*/
-    text-shadow: 0px 1px 0px #FFF;
+
 }
 
 nav.navMenuTop  ul li:hover{
@@ -65,7 +75,7 @@ nav.navMenuTop  ul li:hover{
 }
 
 nav.navMenuTop   ul li a{
-    color:#999;
+    color:#3366FF;
     display:block;
     padding:10px;
     text-decoration:none;
@@ -103,19 +113,84 @@ nav.navMenuTop    ul li a:hover {
 	text-align: center;
 }
 
+
+
+
+
 .base_noticias{
+
     border:dashed 0px #000000;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
-    	overflow: hidden;
-	padding: 10px;
-	background-color: rgb(220, 220, 220);
-	background-color: rgba(220, 220, 220, 0.65);
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgb(220, 220, 220);
+    background-color: rgba(255, 255, 255, 0.9);
+
+
+}
+
+.base_noticias .content_noticia, .base_noticias .content_noticias{
+    display: inline-block;
+}
+.base_noticias .content_noticia p {
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    text-align: justify;
+
+
+}
+
+.base_noticias .content_noticias p {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 99px;
+    overflow: hidden;
+    text-align: justify;
 
 }
 
 
-body{
-    background-color: gainsboro ;
+.base_noticias .titulo_noticia a{
+        text-decoration: none;
+        color: #white;
+}
+
+.base_noticias .titulo_noticia a:link{
+        text-decoration: none;
+        color: #white;
+}
+
+.base_noticias .titulo_noticia a:visited{
+        text-decoration: none;
+        color: white;
+}
+
+.base_noticias .titulo_noticia h1{
+    margin-left: 5%;
+    color: white;
+}
+
+.imagen_noticia{
+  margin-top: 1%;
+  width: 50%;
+  height: 50%;
+  margin-left: 30%;
+
+ }
+
+.imagen_noticia img{
+
+  width: 60%;
+  height: 60%;
+
+ }
+
+.base_noticias .titulo_noticia{
+    background-color: #0099CC;
+    border-radius: 10px;
+    overflow: hidden;
+
 }

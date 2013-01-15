@@ -8,14 +8,17 @@
         <h1> {{ dato.titulo }} </h1>
     </div>
 
+    <div class="imagen_noticia">
+        <img src='/media/{{ dato.imagen_entrada }}'>
+    </div>
+
     <div class="content_noticia">
         <p>{{ dato.contenido }}</p>
     </div>
-
+<hr />
     <div class="info_noticia"> <p> <sub><em>La fecha de publicacion: {{ dato.fecha_publicacion }}. Creado por: {{ dato.usuario.username|upper }}.</em> </sub></p> </div>
+<hr />
 {% endblock %}
+
 </div>
 
-<div class="comentarios">
-    {% block comentarios %} {% endblock %}
-</div>

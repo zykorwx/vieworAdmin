@@ -123,7 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'principal',
-    'comentarios',
+    'disqus',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,3 +154,6 @@ LOGGING = {
         },
     }
 }
+
+DISQUS_API_KEY = 'kaJz3KB2ToQ9zh0VVCQkWCsD1OE2a6rJ6yjYHoShxxc9F4QeAFEDBPaWES0IVUP2'
+DISQUS_WEBSITE_SHORTNAME = 'mangest'

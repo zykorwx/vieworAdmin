@@ -11,15 +11,16 @@
 <div class="titulo_noticia">
     <h1> <a href='/noticia/{{ datos.id }}'>{{ datos.titulo }}</a> </h1>
 </div>
-
 <div class="imagen_noticia">
     <img src='/media/{{ datos.imagen_entrada }}'>
 </div>
 
-<div class="content_noticia">
+<div class="content_noticias">
 <p>{{ datos.contenido }}</p>
 </div>
+<hr />
 <div class="info_noticia"> <p> <sub><em>La fecha de publicacion: {{ datos.fecha_publicacion }}. Creado por: {{ datos.usuario.username|upper }}.</em> </sub></p> </div>
+<hr />
 
 {% empty %}
         <p> No existen noticias que mostrar<p>
