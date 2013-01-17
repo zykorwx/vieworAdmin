@@ -29,7 +29,7 @@ def ingresar(request):
             return render_to_response('Mensajes/noactivo.html', context_instance=RequestContext(request))
     else:
         formulario_login = AuthenticationForm()
-    return render_to_response('formularios/Ingresar.html', {'formulario_login':formulario_login}, context_instance=RequestContext(request))
+    return render_to_response('formularios/ingresar.html', {'formulario_login':formulario_login}, context_instance=RequestContext(request))
 
 
 @login_required(login_url='/inresar')

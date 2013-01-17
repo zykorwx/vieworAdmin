@@ -17,3 +17,6 @@ urlpatterns = patterns('',
     {'document_root': settings.MEDIA_ROOT, }
     ),
 )
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+urlpatterns += staticfiles_urlpatterns()

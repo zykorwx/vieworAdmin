@@ -6,6 +6,5 @@ from django.contrib import admin
 admin.site.register(Tarea)
 admin.site.register(Noticia)
 admin.site.register(Asigna_tarea)
-admin.site.register(Noticia_comentarios)
-admin.site.register(Comentario)
+
 

@@ -3,17 +3,19 @@ body{
 }
 
 
-
 .content-1{
     margin:0 0 0 0;
-    background-image:url(../img/fondo-head.jpg);
-    background-position: left bottom;
+    background-image:url(../img/Logo-viewor-1.jpg);
+    background-color: #000066;
+	background-repeat: repeat-x;
 
 }
 
 .content-1 header {
     margin:0 10% 0 10%;
 }
+
+
 
 
 .content{
@@ -27,8 +29,12 @@ body{
 .Titulo{
 	font-family: Gabriola;
 	font-size:52pt;
+    background-image:url(../img/logo-viewor.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
 	}
-	
+
 .subTitulo{
 	font-size:18pt;
 	margin: -10px 0 0 80px;
@@ -75,7 +81,7 @@ nav.navMenuTop  ul li:hover{
 }
 
 nav.navMenuTop   ul li a{
-    color:#3366FF;
+    color:white;
     display:block;
     padding:10px;
     text-decoration:none;
@@ -155,12 +161,12 @@ nav.navMenuTop    ul li a:hover {
 
 .base_noticias .titulo_noticia a{
         text-decoration: none;
-        color: #white;
+        color: white;
 }
 
 .base_noticias .titulo_noticia a:link{
         text-decoration: none;
-        color: #white;
+        color: white;
 }
 
 .base_noticias .titulo_noticia a:visited{
@@ -168,7 +174,7 @@ nav.navMenuTop    ul li a:hover {
         color: white;
 }
 
-.base_noticias .titulo_noticia h1{
+.base_noticias .titulo_noticia h2{
     margin-left: 5%;
     color: white;
 }

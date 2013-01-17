@@ -5,7 +5,7 @@
 {% block content %}
 <div class="base_noticias">
     <div class="titulo_noticia">
-        <h1> {{ dato.titulo }} </h1>
+        <h2> {{ dato.titulo }} </h2>
     </div>
 
     <div class="imagen_noticia">
@@ -18,7 +18,14 @@
 <hr />
     <div class="info_noticia"> <p> <sub><em>La fecha de publicacion: {{ dato.fecha_publicacion }}. Creado por: {{ dato.usuario.username|upper }}.</em> </sub></p> </div>
 <hr />
-{% endblock %}
+
 
 </div>
+
+{% load disqus_tags %}
+{% disqus_show_comments  %}
+
+{% endblock %}
+
+
 
