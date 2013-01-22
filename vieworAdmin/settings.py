@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'principal',
     'disqus',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

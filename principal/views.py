@@ -1,11 +1,12 @@
 #encoding:utf-8
 from django.contrib.auth.models import User
-from django.shortcuts import render_to_response, get_object_or_404, HttpResponseRedirect
+from django.shortcuts import render_to_response, get_object_or_404, HttpResponseRedirect, redirect, render
 from principal.models import Noticia, Tarea, Asigna_tarea
 from django.template import RequestContext
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
+
 
 
 # Create your views here.
@@ -45,3 +46,4 @@ def mostrar_noticias(request):
 def mostrar_noticia(request, id_noticia):
     dato = get_object_or_404(Noticia, pk=id_noticia)
     return render_to_response('base/base_noticia.html',{'dato': dato}, context_instance=RequestContext(request))
+

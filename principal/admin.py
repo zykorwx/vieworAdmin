@@ -1,6 +1,5 @@
 # -*- coding: utf-8 *-*
 from principal.models import Noticia, Tarea, Asigna_tarea
-from comentarios.models import Noticia_comentarios, Comentario
 from django.contrib import admin
 
 admin.site.register(Tarea)

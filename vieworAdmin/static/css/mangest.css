@@ -1,13 +1,13 @@
 body{
-    background-color: #fff;
+    background-image:url(../img/textura1.jpg);
 }
 
 
 .content-1{
-    margin:0 0 0 0;
-    background-image:url(../img/Logo-viewor-1.jpg);
-    background-color: #000066;
-	background-repeat: repeat-x;
+    margin: 1% 10% 0 10%;
+    background-color: #EEEEEE;
+
+
 
 }
 
@@ -20,22 +20,19 @@ body{
 
 .content{
     margin: 1% 10% 0 10%;
-    background-color: #CCCCCC;
+    background-color: #EEEEEE;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
 }
 
-.Titulo{
+.content-1 .Titulo{
 	font-family: Gabriola;
 	font-size:52pt;
-    background-image:url(../img/logo-viewor.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-
 	}
 
-.subTitulo{
+
+.content-1 .subTitulo{
 	font-size:18pt;
 	margin: -10px 0 0 80px;
 
@@ -48,6 +45,10 @@ nav.navMenuTop{
 	background-color: rgba(255, 255, 255, 0.4);
 	overflow: hidden;
 	padding: 10px;
+    background-image:url(../img/logo-viewor.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20% 100%;
 }
 
 nav.navMenuTop ul{
@@ -81,7 +82,7 @@ nav.navMenuTop  ul li:hover{
 }
 
 nav.navMenuTop   ul li a{
-    color:white;
+    color:#3366CC;
     display:block;
     padding:10px;
     text-decoration:none;
@@ -195,7 +196,7 @@ nav.navMenuTop    ul li a:hover {
  }
 
 .base_noticias .titulo_noticia{
-    background-color: #0099CC;
+    background-color: #663399;
     border-radius: 10px;
     overflow: hidden;
 

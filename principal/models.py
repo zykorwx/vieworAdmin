@@ -7,7 +7,6 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-
 class Noticia(models.Model):
     titulo = models.CharField(max_length=100, unique=True)
     contenido = models.TextField(help_text='Escribe el contenido de la noticia aqui')
@@ -25,6 +24,7 @@ class Tarea(models.Model):
     descripcion = models.TextField(help_text='Descripcion de la tarea a realizar')
     fecha_creacion = models.DateTimeField(auto_now=True)
     fecha_limite = models.DateTimeField()
+    porcentaje = models.IntegerField(max_length=2, default=0)
     usuario = models.ForeignKey(User)
 
     def __unicode__(self):
@@ -34,7 +34,4 @@ class Tarea(models.Model):
 class Asigna_tarea(models.Model):
     usuario_asignado = models.ForeignKey(User)
     tarea_asignada = models.ForeignKey(Tarea)
-
-
-
 
